@@ -18,32 +18,52 @@ struct DictionaryView: View {
                 .padding()
             List(keywords){ list in
                 
-                Text(list.name)
-                    
-                Button("More") {
+                Button(list.name) {
                             showingModal.toggle()
                         }
+                .foregroundColor(.black)
                         .sheet(isPresented: $showingModal) {
                             SheetView()
                         }
-                
             }
         }
     }
 }
 
-struct SheetView: View {
-    @Environment(\.dismiss) var dismiss
-
-    var body: some View {
-        Button("Press to dismiss") {
-            dismiss()
-        }
-        .font(.title)
-        .padding()
-        .background(Color.black)
-    }
-}
+//struct SheetView: View {
+//    @Environment(\.dismiss) var dismiss
+//
+//    var body: some View {
+//        VStack{
+//            HStack{
+//                Spacer()
+//                Button("close") {
+//                    dismiss()
+//                }
+//                .font(.title)
+//                .padding()
+//            }
+//
+//            VStack(alignment: .leading){
+//                Text("Array")
+//                    .font(.headline)
+//                    .bold()
+//                Text("Definition")
+//                    .font(.largeTitle)
+//                    .bold()
+//                Text("정의")
+//                Text("Example")
+//                    .font(.largeTitle)
+//                    .bold()
+//                Text("예시")
+//                Text("Link")
+//                    .font(.largeTitle)
+//                    .bold()
+////                Link(destination: "www.naver.com", label: "Link로 연결")
+//            }.padding()
+//        }
+//    }
+//}
 
 
 let keywords = [
@@ -52,7 +72,21 @@ let keywords = [
     Keywords(name:"Array3", def:"hi", ex:"hi", link:"www.naver.com"),
     Keywords(name:"Array4", def:"hi", ex:"hi", link:"www.naver.com"),
     Keywords(name:"Array5", def:"hi", ex:"hi", link:"www.naver.com"),
-    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com")
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
+    Keywords(name:"Array6", def:"hi", ex:"hi", link:"www.naver.com"),
 ]
 
 struct Keywords: Identifiable {

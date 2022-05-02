@@ -11,6 +11,7 @@ struct MainView: View {
 //    private var keyword: Keywords
     
     var body: some View {
+        
             TabView {
                 DictionaryView()
                     .tabItem {
