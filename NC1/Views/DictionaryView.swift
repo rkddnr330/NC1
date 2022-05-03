@@ -32,6 +32,8 @@ struct DictionaryView: View {
                         
                 }).sheet(isPresented: $showingModal) {
                     SheetView(keywordInSheet: each)
+                        
+                       
                     //SheetView()에 해당 keyword data를 넘겨주자
                 }
             }.navigationBarTitle("LO Keyword Dictionary")

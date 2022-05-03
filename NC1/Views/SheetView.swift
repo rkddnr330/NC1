@@ -16,47 +16,47 @@ struct SheetView: View {
         VStack{
             HStack{
                 Spacer()
-
+                
                 Button(action:{
                     dismiss()
                 }, label: {
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "xmark.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 20)
                 })
             }
             
             VStack(alignment: .leading){
-//                VStack{
-                    Text("Array")
-                        .font(.system(size: 50, weight: .bold, design: .rounded))
-                        .bold()
-                        .padding(.bottom)
-//                }
+                
+                //Name
+                Text(keywordInSheet.name)
+                    .font(.system(size: 40, weight: .bold))
+                    .padding(.bottom)
+                
                 Text("Definition")
-                    .font(.title)
-                    .bold()
-                Text("정의")
-                    .padding(.vertical)
+                    .font(.system(size: 20, weight: .bold))
+                    .padding(.top)
+                Text(keywordInSheet.def)
+                    .padding(.vertical, 4)
+                
                 Text("Example")
-                    .font(.title)
-                    .bold()
-                Text("예시")
-                    .padding(.vertical)
+                    .font(.system(size: 20, weight: .bold))
+                    .padding(.top)
+                Text(keywordInSheet.ex)
+                    .padding(.vertical, 4)
+                
                 Text("Link")
-                    .font(.title)
-                    .bold()
-                Text("링크 연결")
-                    .padding(.vertical)
+                    .font(.system(size: 20, weight: .bold))
+                    .padding(.top)
+                Text(keywordInSheet.link)
+                    .padding(.vertical, 4)
+                
                 Spacer()
-//                Link(destination: "www.naver.com", label: "Link로 연결")
             }
-            .padding([.leading, .bottom, .trailing])
+            .padding()
             .frame(width: 350, alignment: .topLeading)
-        }.padding()
-    }
-}
-
-struct SheetView_Previews: PreviewProvider {
-    static var previews: some View {
-        SheetView()
+        }
+        .padding()
     }
 }
