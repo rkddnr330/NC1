@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
-//    private var keyword: Keywords
+struct MainTabView: View {
     
     var body: some View {
         
@@ -26,12 +25,11 @@ struct MainView: View {
                     }
             }
             .font(.headline)
-            
     }
 }
 
-struct MainView_Previews: PreviewProvider {
+struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainTabView()
     }
 }

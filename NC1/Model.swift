@@ -5,9 +5,9 @@
 //  Created by Park Kangwook on 2022/04/29.
 //
 
-import Foundation
-
-//struct Keywords: Identifiable {
+//import SwiftUI
+//
+//struct KeywordsData: Identifiable {
 //    let id = UUID()
 //    let name: String
 //    let def: String

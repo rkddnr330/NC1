@@ -10,14 +10,18 @@ import SwiftUI
 struct SheetView: View {
     @Environment(\.dismiss) var dismiss
     
+    var keywordInSheet: Keywords
+    
     var body: some View {
         VStack{
             HStack{
                 Spacer()
-                Button("close") {
+
+                Button(action:{
                     dismiss()
-                }
-                .font(.title3)
+                }, label: {
+                    Image(systemName: "heart.fill")
+                })
             }
             
             VStack(alignment: .leading){
