@@ -14,7 +14,7 @@ struct InformView: View {
         VStack(alignment:.leading){
             VStack(alignment: .leading){
                 Text("Version")
-                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .font(.system(size: 30, weight: .bold))
                     .padding()
                 Text("""
                         Swift : 5.6
@@ -22,16 +22,12 @@ struct InformView: View {
                     """)
                 HStack{
                     Text("Dark Mode")
-                        .font(.system(size: 30, weight: .bold, design: .rounded))
+                        .font(.system(size: 30, weight: .bold))
                         .padding()
-//                Toggle(isOn: $vibrateOnRing) {
-//                        Text("Vibrate on Ring")
-//                    }
                     Spacer()
                     Toggle("Lable",isOn: $isDark )
                         .labelsHidden()
                         .padding()
-                    
                 }
                 Spacer()
             }

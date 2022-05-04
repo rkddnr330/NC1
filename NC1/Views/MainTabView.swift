@@ -15,7 +15,6 @@ struct MainTabView: View {
                 DictionaryView()
                     .tabItem {
                         Image(systemName: "doc.text.magnifyingglass")
-                            
                         Text("Dictionary")
                     }
                 InformView()
