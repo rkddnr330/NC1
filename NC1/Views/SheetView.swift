@@ -40,7 +40,7 @@ struct SheetView: View {
                 Text(keywordInSheet.def)
                     .padding(.vertical, 4)
                 
-                Text("Example")
+                Text("Explanation")
                     .font(.system(size: 20, weight: .bold))
                     .padding(.top)
                 Text(keywordInSheet.ex)
@@ -50,7 +50,7 @@ struct SheetView: View {
                     .font(.system(size: 20, weight: .bold))
                     .padding(.top)
                 
-                Button("Go to \(keywordInSheet.name)",
+                Button("More About \(keywordInSheet.name)",
                        action: {buttonAction(keywordInSheet.link, .link)})
                 .padding(.vertical, 4)
                 

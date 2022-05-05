@@ -30,7 +30,7 @@ struct DictionaryView: View {
                     SheetView(keywordInSheet: each)
                     //SheetView()에 해당 keyword data를 넘겨주자
                 }
-            }.navigationBarTitle("LO Keyword Dictionary")
+            }.navigationBarTitle("LO Dictionary")
 //                .frame(width: 100, height: 100, alignment: .leading)
 
         }
